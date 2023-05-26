@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>]
+    <style>
+        /* 选中标签的范围越大，优先级越低 */
+        
+        /* (*) 通配符 */
+        * color{ 
+            color: red !important;
+            /* limportant 提权功能，提高权重/优先级到最高，慎用 */
+        }
+
+        /*  标签选择器 */
+        div {
+            color: green;
+        }
+
+        /* (.)类选择器 （class='') */
+        .box {
+            color: blue;
+        }
+
+        /* (#) id选择器 id=''*/
+        #apple {
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- 公式：通配符选择器＜标签选择器＜类选择器＜id选择器＜行内样式 ＜ ！important -->
+    <div class="box" id="apple" style="color: blueviolet;">divvvvvvvvv</div>
+    <!-- 标签边上设置的样式，为行内样式，如stlye -->
+</body> 
+</html>

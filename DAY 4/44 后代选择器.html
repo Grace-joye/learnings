@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div span {
+            color: aqua;
+        }
+        /* 后代选择器，会选中后代的所有标签，儿子，孙子，重孙子，。。。都受影响 */
+    </style>
+</head>
+<body>
+    <div>
+        <span>儿子span，这是子标签span在div父级里面</span>
+        <p>
+            <span>孙子pan，这是div里的p里的span标签</span>
+        </p>
+    </div>
+    <br>
+    <span>这是单纯的span标签</span>
+</body>
+</html>
