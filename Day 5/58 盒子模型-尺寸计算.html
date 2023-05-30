@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+             /* -20 -20 */ 
+             height: 200px;
+            /* -20 -20  */
+            background-color: pink;
+
+            padding: 20px;
+            /* 由于上下左右加了内边距，都会导致盒子被撑大，因此需要减去 两边增加的长度 */
+            /* width: 160px;
+            height: 160px; */
+            /* 手动减法 */
+            
+            box-sizing: border-box;
+            /* 内减吧模式，不需要手动减法，加pading和 border不会撑大盒子
+             */
+        }
+    
+    </style>
+</head>
+<body>
+    <div>
+        divvv
+
+    </div>
+</body>
+</html>
